@@ -67,12 +67,3 @@ else:
         with st.chat_message("assistant"):
             response = st.write_stream(stream)
         st.session_state.messages.append({"role": "assistant", "content": response})
-
-
-st.markdown("""
-    <style>
-    html, body, .stApp {
-        background-color: #f7f5bc;
-    }
-    </style>
-""", unsafe_allow_html=True)
