@@ -74,7 +74,7 @@ else:
 st.markdown("""
     <style>
     html, body, .stApp {
-        background-color: skyblue;
+        background-color: yellow;
     }
     </style>
 """, unsafe_allow_html=True)
