@@ -26,6 +26,21 @@ else:
     # Create a session state variable to store the chat messages. This ensures that the
     # messages persist across reruns.
     if "messages" not in st.session_state:
+        if level == "Beginner":
+        sys_prompt = (
+            "You are a kind English tutor. Speak slowly and use simple vocabulary. "
+            "Correct the user's grammar and explain why. Use very simple sentences."
+        )
+        elif level == "Intermediate":
+        sys_prompt = (
+            "You are a supportive English tutor. Speak naturally and give suggestions for more fluent expressions. "
+            "Correct minor grammar mistakes and explain in simple English."
+        )
+        else:  # Advanced
+        sys_prompt = (
+            "You are a native-level English tutor. Speak fluently and naturally like a native speaker. "
+            "Use idioms and complex sentence structures. Correct subtle mistakes and suggest native-like alternatives."
+        )
         st.session_state.messages = [
             {
             "role": "system",
