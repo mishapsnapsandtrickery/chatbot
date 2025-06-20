@@ -73,7 +73,7 @@ else:
 
 st.markdown("""
     <style>
-    body {
+    html, body, .stApp {
         background-color: skyblue;
     }
     </style>
