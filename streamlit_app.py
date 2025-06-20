@@ -15,6 +15,11 @@ if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
 else:
 
+    level = st.selectbox(
+    "👉 먼저 본인의 영어 실력을 선택해주세요:",
+    ["Beginner", "Intermediate", "Advanced"]
+)
+
     # Create an OpenAI client.
     client = OpenAI(api_key=openai_api_key)
 
