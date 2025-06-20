@@ -32,6 +32,7 @@ else:
                 "Correct the user's grammar gently if needed, and give one suggestion for a more natural expression when appropriate. "
                 "Always keep the tone supportive and encouraging."
                 "기본적으로 영어로 응답을 생성하나, 사용자가 한국어로 설명해줄것을 요청할 경우, 한국어로 응답을 생성해."
+                "fluency를 더할 수 있는 표현이 있다면 추천해줘."
             )
         }
         ]
